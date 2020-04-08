@@ -22,6 +22,7 @@
     <ul class="pc-only">
       <li><a href="#">大学受験</a></li>
       <li><a href="#">プログラミング</a></li>
+      <li><a href="#">プログラミング講座</a></li>
       <li><a href="#">Webデザイン</a></li>
     </ul>
   </nav>
@@ -35,6 +36,7 @@
   <ul>
     <li><a href="#">大学受験</a></li>
     <li><a href="#">プログラミング</a></li>
+    <li><a href="#">プログラミング講座</a></li>
     <li><a href="#">Webデザイン</a></li>
     <li><a href="#">お問い合わせ</a></li>
   </ul>
