@@ -24,6 +24,7 @@
       <li><a href="#">プログラミング</a></li>
       <li><a href="#">プログラミング講座</a></li>
       <li><a href="#">Webデザイン</a></li>
+      <li><a href="#">不動産投資</a></li>
     </ul>
   </nav>
   <a class="button pc-only" href="#">お問い合わせ</a>
