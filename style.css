@@ -3,10 +3,17 @@ Theme Name: 週末起業塾
 Description: 週末起業塾のテーマです。
 Author: 週末起業塾WPチーム
 */
-.pagination h2.screen-reader-text { display: none; }
-
 body{
-    margin: 0;
+    margin: 3;
+}
+
+main{
+  margin: 40px;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul,li{
@@ -16,164 +23,336 @@ ul,li{
 }
 
 header{
-    box-shadow: 0 1px 10px #eee;
-    display: flex;
-    align-items: center;
-    padding: 20px 40px;
-  }
+  align-items: center;
+  display: flex;
+  padding: 20px 40px;
+}
 
-  .logo{
-    width: 135px;
-    height: 30px;
-    margin: 0 40px 0 0;
-  }
-  
-  .logo img{
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .pc-menu{
-    flex: 1;
-  }
-  
-  .pc-menu ul{
-    display: flex;
-  }
-  
-  .pc-menu li{
-    margin-right: 40px;
-  }
-  
-  header .button{
-    background: #eddb22;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    display: block;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 300ms;
-  }
-  
-  header .button:hover{
-    background: #fcef57;
-  }
+.logo{
+  width: 135px;
+  height: 30px;
+  margin: 0 40px 0 0;
+}
 
-  footer{
-    background: #2d2d2d;
-    padding: 20px;
-    text-align: center;
-  }
+.logo img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  .icon{
-    width: 26px;
-    height: 26px;
-  }
-  
-  footer ul{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .links-social{
-    margin: 20px 40px 40px;
-  }
-  
-  .links-main-pages,
-  .links-sub-pages{
-    margin: 40px;
-  }
-  
-  .links-social li{
-    padding: 0 10px;
-  }
-  
-  .links-main-pages li,
-  .links-sub-pages li{
-    padding: 0 30px;
-    border-right: solid 1px #fff;
-    font-size: 14px;
-  }
-  
-  .links-main-pages li:last-child,
-  .links-sub-pages li:last-child{
-    border-right: 0;
-  }
-  
-  .links-main-pages a,
-  .links-sub-pages a{
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  small {
-    color: #fff;
-  }
+.pc-menu{
+  flex: 1;
+}
 
-  .sp-only{
-    display: none;
-  }
-  
-  .icon-close{
-    display: none;
-  } 
-  
-  .menu img{
-    width: 30px;
-    height: 30px;
-  }
-  
-  @media screen and (max-width:720px) {
-    .sp-only{
-      display: inherit;
-    }
-    .pc-only{
-      display: none !important;
-    }
-    header{
-      padding: 20px;
-    }
+.pc-menu ul{
+  display: flex;
+}
 
-    .pc-only {
-        display: none !important;
-      }
-      .links-main-pages{
-        display: block;
-        margin: 0 0 20px 0;
-      }
-      .links-main-pages li{
-        border: none;
-        border-bottom: dotted 1px #fff;
-        padding: 20px 0;
-      }
-      .links-main-pages{
-        border-top: dotted 1px #fff;
-      }
+.pc-menu li{
+  margin-right: 30px;
+}
 
-      main{
-        margin: 20px;
-      }
-  }
+header .button{
+  background: rgb(247, 20, 4);
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  color: rgb(252, 252, 252);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 300ms;
+}
 
-  .sp-menu a{
-    display: block;
-    border-bottom: solid 1px #eee;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-image: url("images/left-arrow.png");
-    background-size: 10px 20px;
-    background-position: right 20px center;
-    background-repeat: no-repeat;
-  }
+header .button:hover{
+  background: #db3030;
+}
 
-  .sp-menu{
-    display: none;
-  }
+footer{
+  background: #2d2d2d;
+  padding: 20px;
+  text-align: center;
+}
 
+.icon{
+  width: 26px;
+  height: 26px;
+}
+
+footer ul{
+  display: flex;
+  justify-content: center;
+}
+
+.links-social{
+  margin: 20px 40px 40px;
+}
+
+.links-main-pages{
+  margin: 40px;
+}
+
+.links-social li{
+  padding: 0 10px;
+}
+
+.links-main-pages li{
+  padding: 0 30px;
+  border-right: solid 1px #fff;
+  font-size: 14px;
+}
+
+.links-main-pages li:last-child{
+  border-right: 0;
+}
+
+.links-main-pages a{
+  color: #fff;
+  text-decoration: none;
+}
+
+small {
+  color: #fff;
+}
+
+.sp-only{
+  display: none;
+}
+
+.icon-close{
+  display: none;
+} 
+
+.menu img{
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width:720px) {
   main{
-    margin: 40px;
+    margin: 20px;
   }
+  .pc-only {
+    display: none !important;
+  }
+  .links-main-pages{
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .links-main-pages li{
+    border: none;
+    border-bottom: dotted 1px #fff;
+    padding: 20px 0;
+  }
+  .links-main-pages{
+    border-top: dotted 1px #fff;
+  }
+}
+
+.sp-menu a{
+  display: block;
+  border-bottom: solid 1px #eee;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-image: url("images/left-arrow.png");
+  background-size: 10px 20px;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+}
+
+.sp-menu{
+  display: none;
+}
+
+.header{
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.main-wrapper{
+  width: 1080px;
+  margin: auto;
+}
+
+.post-item{
+  min-height: 285px;
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+
+.post-item h2{
+  font-size: 16px;
+}
+
+.pagination h2.screen-reader-text {
+  display: none; 
+}
+
+.screen-reader-text{
+  display: none;
+}
+
+.pagination{
+  text-align: center;
+}
+
+.page-numbers{
+  background: #fff;
+  padding: 10px;
+  border: solid 1px #ccc;
+  text-decoration: none;
+}
+
+.page-numbers.current{
+  background: #ff0000;
+  color: #fff;
+}
+
+.page-numbers.next,
+.page-numbers.prev{
+  border: 0;
+  background: none;
+}
+
+.post-flex-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-flex-list li {
+  flex:auto;
+  width: 50%;
+}
+
+.post-thumbnail {
+  display: block;
+  text-align:center;
+}
+
+.post_title {
+  display: block;
+  padding: 0.0em 0 0 0;/*上下の余白*/
+  border-bottom: solid 1px #ff0000;/*下線*/
+}
+
+.post_title a {
+  text-decoration: none;
+}
+
+.post-meta {
+  display: block;
+  margin: 25px 0px;
+}
+
+.post-article {
+  display: block;
+  width: 680px;
+}
+
+.post-exerpt {
+  font-size: 13px;
+}
+
+.category-label {
+  font-size: 13px;
+  margin-right: 7px; 
+}
+
+.post-categories {
+  font-size: 13px;
+}
+
+.post-tags {  
+  margin-bottom: 5px;
+}
+
+.post-tag {
+  font-size: 10px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  padding: 4px 4px;
+  border-radius: 10px 10px 10px 10px;
+  color: #ccc;
+  background-color: #ff0000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.post-tag a{
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.contents-container{
+  padding: 15px;
+  background: #fff;
+  margin-bottom: 20px;
+  max-width: 720px;
+  flex: 1;
+}
+
+.sidebar-container {
+  width: 200px;
+}
+
+
+/*
+ * サイドバー
+ */
+.widgettitle {
+  font-size: 16px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 3px 0px 1px 6px;
+}
+
+.post-sidebar li {
+  font-size: 12px;
+}
+
+/* シングルページ */
+.single-article-title {
+  padding-right: 40px;
+}
+
+.single-content {
+  padding-right: 40px;
+  font-size:14px;
+}
+
+.single-content h2 {
+  background-color: #fff;
+  font-size:32px;
+  color: #000;
+  border-left: solid 6px #31b7f5;
+  padding: 3px 40px 3px 6px;
+  margin-bottom: 3px;
+}
+
+.single-content h3 {
+  background-color: #fff;
+  font-size:24px;
+  color: #000;
+  border-bottom: solid 3px #31b7f5;
+  padding: 3px 40px 3px 6px;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 960px) {
+	.post-flex-list > li{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 670px) {
+  .sidebar-container {
+    display: none;
+  }
+}
