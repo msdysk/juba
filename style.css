@@ -313,6 +313,10 @@ small {
   padding: 3px 0px 1px 6px;
 }
 
+.post-sidebar li {
+  font-size: 12px;
+}
+
 /* シングルページ */
 .single-article-title {
   padding-right: 40px;
