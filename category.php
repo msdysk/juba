@@ -2,7 +2,7 @@
 
 <main>
   <div class="main-wrapper">
-    <h1 class="header">記事一覧</h1>
+    <h1 class="header"><?php single_cat_title(); ?></h1>
     <div class="main-container">
       <div class="contents-container">
         <?php if(have_posts()): ?>
