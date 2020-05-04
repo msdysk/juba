@@ -14,6 +14,15 @@
             <h2><?php the_title(); ?></h2>
           </div>
           
+          <div>
+            <span class="post-date"><?php the_time('Y年n月j日'); ?> <?php the_time('G:i'); ?></span>
+          </div>
+
+          <div>
+            <span class="category-label">カテゴリー：</span><span class="post-categories"><?php the_category(','); ?></span>
+            <span><?php the_tags('<span class="post-tag">','</span><span class="post-tag">','</span>'); ?></span>
+          </div>
+
           <div class="single-content"><?php the_content(); ?></div>
           
           <?php
@@ -24,10 +33,6 @@
             'link_after' => '</span>',
           );
           wp_link_pages($args); ?>
-
-          <p class="post-meta">
-            <span class="post-date"><?php the_time('Y年n月j日'); ?> <?php the_time('G:i'); ?></span>
-          </p>
 
           <div class="navigation">
             <? if(get_next_post()): ?>
