@@ -5,11 +5,21 @@
     <div class="main-container">
       <?php while(have_posts()):the_post(); ?>
         <div class="contents-container">
-          <?php 
-            if ( has_post_thumbnail() ) {
-              the_post_thumbnail(array(680,680));
-            }
-          ?>
+          <div class="contents-thumbnail-pc">
+            <?php 
+              if ( has_post_thumbnail() ) {
+                the_post_thumbnail(array(680,680));
+              }
+            ?>
+          </div>
+          <div class="contents-thumbnail-sp">
+            <?php 
+              if ( has_post_thumbnail() ) {
+                the_post_thumbnail(array(300,300));
+              }
+            ?>
+          </div>
+          
           <div class="single-article-title">
             <h2><?php the_title(); ?></h2>
           </div>
@@ -34,7 +44,7 @@
           );
           wp_link_pages($args); ?>
 
-          <div class="navigation">
+          <div class="single-navigation">
             <? if(get_next_post()): ?>
               <div class="next-page">次の記事：<?php next_post_link('%link'); ?></div>
               <?php
@@ -45,7 +55,10 @@
             <?php endif; ?>
           </div>
 
-          <?php comments_template(); ?>
+          <div class="single-comment">
+            <?php comments_template(); ?>
+          </div>
+
         </div>
       <?php endwhile; ?>
 

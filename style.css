@@ -139,33 +139,6 @@ small {
   height: 30px;
 }
 
-@media screen and (max-width:720px) {
-  main{
-    margin: 20px;
-  }
-  .sp-only{
-    display: inherit;
-  }
-  .pc-only {
-    display: none !important;
-  }
-  .links-main-pages{
-    display: block;
-    margin: 0 0 20px 0;
-  }
-  .links-main-pages li{
-    border: none;
-    border-bottom: dotted 1px #fff;
-    padding: 20px 0;
-  }
-  .links-main-pages{
-    border-top: dotted 1px #fff;
-  }
-  header{
-    padding: 20px;
-  }
-}
-
 .sp-menu a{
   display: block;
   border-bottom: solid 1px #eee;
@@ -195,7 +168,7 @@ small {
 }
 
 .main-wrapper{
-  width: 1080px;
+  max-width: 1080px;
   margin: auto;
 }
 
@@ -308,10 +281,17 @@ small {
   color: #fff;
 }
 
+.post-date {
+  font-size: 12px;
+}
+
 .main-container {
   display: flex;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
+}
+
+.contents-thumbnail-sp {
+  display:none;
 }
 
 .contents-container{
@@ -351,6 +331,19 @@ small {
   font-size:14px;
 }
 
+.single-comment {
+  font-size: 14px;
+  padding: 0px 0px;
+  border-top: solid 1px #d5d7d8;
+}
+
+.single-navigation {
+  font-size: 12px;
+  margin-top: 15px;
+  padding: 8px 0px;
+  border-top: solid 1px #d5d7d8;
+}
+
 .single-content h2 {
   background-color: #fff;
   font-size:32px;
@@ -369,14 +362,43 @@ small {
   margin-bottom: 3px;
 }
 
-@media screen and (max-width: 960px) {
-	.post-flex-list > li{
+@media screen and (max-width:720px) {
+  main{
+    margin: 20px;
+  }
+  .pc-only {
+    display: none !important;
+  }
+  .sp-only {
+    display: inherit;
+  }
+  .links-main-pages{
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .links-main-pages li{
+    border: none;
+    border-bottom: dotted 1px #fff;
+    padding: 20px 0;
+  }
+  .links-main-pages{
+    border-top: dotted 1px #fff;
+  }
+  header{
+    padding: 20px;
+  }
+  .post-flex-list > li{
 		width: 100%;
-	}
-}
-
-@media screen and (max-width: 670px) {
+  }
   .sidebar-container {
     display: none;
+  }
+
+  .contents-thumbnail-pc {
+    display:none !important;
+  }
+
+  .contents-thumbnail-sp {
+    display:block;
   }
 }
