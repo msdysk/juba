@@ -8,11 +8,20 @@
           <h2><?php the_title(); ?></h2>
         </div>
         
-        <?php 
-          if ( has_post_thumbnail() ) {
-            the_post_thumbnail(array(680,680));
-          }
-        ?>
+        <div class="contents-thumbnail-pc">
+            <?php 
+              if ( has_post_thumbnail() ) {
+                the_post_thumbnail(array(680,680));
+              }
+            ?>
+          </div>
+          <div class="contents-thumbnail-sp">
+            <?php 
+              if ( has_post_thumbnail() ) {
+                the_post_thumbnail(array(300,300));
+              }
+            ?>
+          </div>
   
         <div class="single-content"><?php the_content(); ?></div>
         

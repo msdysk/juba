@@ -269,8 +269,11 @@ small {
 
 .main-container {
   display: flex;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
+}
+
+.contents-thumbnail-sp {
+  display:none;
 }
 
 .contents-container{
@@ -308,6 +311,17 @@ small {
 .single-content {
   padding-right: 40px;
   font-size:14px;
+}
+
+.single-comment {
+  padding-top: 10px;
+}
+
+.single-navigation {
+  font-size: 12px;
+  margin-top: 15px;
+  padding: 8px 0px;
+  border-top: solid 1px #d5d7d8;
 }
 
 .single-content h2 {
@@ -355,5 +369,13 @@ small {
   }
   .sidebar-container {
     display: none;
+  }
+
+  .contents-thumbnail-pc {
+    display:none !important;
+  }
+
+  .contents-thumbnail-sp {
+    display:block;
   }
 }
