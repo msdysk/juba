@@ -16,17 +16,17 @@
 
 <header>
   <h1 class="logo">
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="N予備校"></a>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/co.jpg" alt="#"></a>
   </h1>
   <nav class="pc-menu">
     <ul class="pc-only">
-      <li><a href="#">大学受験</a></li>
-      <li><a href="#">プログラミング</a></li>
-      <li><a href="#">プログラミング講座</a></li>
-      <li><a href="#">Webデザイン</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Shop</a></li>
     </ul>
   </nav>
-  <a class="button pc-only" href="#">お問い合わせ</a>
+  <a class="button pc-only" href="#">Contact</a>
   <a href="#" class="menu sp-only">
     <img src="<?php echo get_template_directory_uri(); ?>/images/icon-menu.png" alt="メニュー" class="icon-menu">
     <img src="<?php echo get_template_directory_uri(); ?>/images/icon-close.png" alt="閉じる" class="icon-close">
@@ -34,10 +34,10 @@
 </header>
 <nav class="sp-menu">
   <ul>
-    <li><a href="#">大学受験</a></li>
-    <li><a href="#">プログラミング</a></li>
-    <li><a href="#">プログラミング講座</a></li>
-    <li><a href="#">Webデザイン</a></li>
-    <li><a href="#">お問い合わせ</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Contact</a></li>
   </ul>
 </nav>
