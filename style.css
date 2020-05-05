@@ -263,6 +263,10 @@ small {
   color: #fff;
 }
 
+.post-date {
+  font-size: 12px;
+}
+
 .main-container {
   display: flex;
   margin: 0 auto;
@@ -331,7 +335,7 @@ small {
   .pc-only {
     display: none !important;
   }
-  .sp-menu {
+  .sp-only {
     display: block;
   }
   .links-main-pages{
