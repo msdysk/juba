@@ -24,4 +24,10 @@ add_theme_support( 'post-thumbnails' );
 // ウィジェット
 register_sidebar();
 
+// カスタムロゴ
+add_image_size('mytheme-logo', 160, 90);
+add_theme_support('custom-logo', array(
+    'size' => 'mytheme-logo'
+));
+
 ?>
