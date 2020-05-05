@@ -314,7 +314,9 @@ small {
 }
 
 .single-comment {
-  padding-top: 10px;
+  font-size: 14px;
+  padding: 0px 0px;
+  border-top: solid 1px #d5d7d8;
 }
 
 .single-navigation {
