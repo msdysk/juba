@@ -129,27 +129,6 @@ small {
   height: 30px;
 }
 
-@media screen and (max-width:720px) {
-  main{
-    margin: 20px;
-  }
-  .pc-only {
-    display: none !important;
-  }
-  .links-main-pages{
-    display: block;
-    margin: 0 0 20px 0;
-  }
-  .links-main-pages li{
-    border: none;
-    border-bottom: dotted 1px #fff;
-    padding: 20px 0;
-  }
-  .links-main-pages{
-    border-top: dotted 1px #fff;
-  }
-}
-
 .sp-menu a{
   display: block;
   border-bottom: solid 1px #eee;
@@ -171,7 +150,7 @@ small {
 }
 
 .main-wrapper{
-  width: 1080px;
+  max-width: 1080px;
   margin: auto;
 }
 
@@ -345,13 +324,31 @@ small {
   margin-bottom: 3px;
 }
 
-@media screen and (max-width: 960px) {
-	.post-flex-list > li{
+@media screen and (max-width:720px) {
+  main{
+    margin: 20px;
+  }
+  .pc-only {
+    display: none !important;
+  }
+  .sp-menu {
+    display: block;
+  }
+  .links-main-pages{
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .links-main-pages li{
+    border: none;
+    border-bottom: dotted 1px #fff;
+    padding: 20px 0;
+  }
+  .links-main-pages{
+    border-top: dotted 1px #fff;
+  }
+  .post-flex-list > li{
 		width: 100%;
-	}
-}
-
-@media screen and (max-width: 670px) {
+  }
   .sidebar-container {
     display: none;
   }
