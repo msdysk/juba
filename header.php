@@ -20,10 +20,11 @@
   </h1>
   <nav class="pc-menu">
     <ul class="pc-only">
-      <li><a href="#">Home</a></li>
+    <?php wp_nav_menu(array('menu' => 'Menu Books')); ?>
+      <!-- <li><a href="#">Home</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Menu</a></li>
-      <li><a href="#">Shop</a></li>
+      <li><a href="#">Shop</a></li> -->
     </ul>
   </nav>
   <a class="button pc-only" href="#">Contact</a>
@@ -34,10 +35,11 @@
 </header>
 <nav class="sp-menu">
   <ul>
-    <li><a href="#">Home</a></li>
+   <?php wp_nav_menu(array('menu' => 'Menu Books2')); ?>
+    <!-- <li><a href="#">Home</a></li>
     <li><a href="#">Blog</a></li>
     <li><a href="#">Menu</a></li>
     <li><a href="#">Shop</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#">Contact</a></li> -->
   </ul>
 </nav>
