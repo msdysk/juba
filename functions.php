@@ -30,4 +30,11 @@ add_theme_support('custom-logo', array(
     'size' => 'mytheme-logo'
 ));
 
+// カスタムメニューの定義
+register_nav_menus(array(
+	'gnav' => 'グローバルナビ',
+	'sidenav' => 'サイドナビ',
+	'footernav' => 'フッターナビ'
+));
+
 ?>
