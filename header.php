@@ -20,26 +20,17 @@
   </h1>
   <nav class="pc-menu">
     <ul class="pc-only">
-    <!-- <?php wp_nav_menu(array('menu' => 'Menu Books')); ?> -->
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Shop</a></li>
+    <?php wp_nav_menu(array('menu' => 'Menu Books')); ?>
     </ul>
   </nav>
   <a class="button pc-only" href="#">Contact</a>
   <a href="#" class="menu sp-only">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/icon-menu.png" alt="メニュー" class="icon-menu">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/HBGmenu.png" alt="メニュー" class="icon-menu">
     <img src="<?php echo get_template_directory_uri(); ?>/images/icon-close.png" alt="閉じる" class="icon-close">
   </a>
 </header>
 <nav class="sp-menu">
   <ul>
-   <!-- <?php wp_nav_menu(array('menu' => 'Menu Books2')); ?> -->
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#">Menu</a></li>
-    <li><a href="#">Shop</a></li>
-    <li><a href="#">Contact</a></li>
+   <?php wp_nav_menu(array('menu' => 'Menu Books')); ?>
   </ul>
 </nav>
