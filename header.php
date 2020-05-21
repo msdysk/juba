@@ -26,7 +26,7 @@
   <a class="button pc-only" href="#">Contact</a>
   <a href="#" class="menu sp-only">
     <img src="<?php echo get_template_directory_uri(); ?>/images/HBGmenu.png" alt="メニュー" class="icon-menu">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/icon-close.png" alt="閉じる" class="icon-close">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/batu.png" alt="閉じる" class="icon-close">
   </a>
 </header>
 <nav class="sp-menu">
